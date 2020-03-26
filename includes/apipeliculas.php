@@ -39,9 +39,8 @@ class ApipPliculas
 
         $res = $pelicula->obtenerPelicula($id);
 
-        if ($res->rowCount() > 0) {
+        if ($res->rowCount() == 1) {
             $row = $res->fetch();
-
             $item = array(
                 'id' => $row['id'],
                 'nombre' => $row['nombre'],
