@@ -1,7 +1,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-form {
+form,
+#mostrar-todo-container {
   background-color: #eee;
   margin: 0 auto;
   width: 400px;
@@ -27,12 +28,13 @@ textarea {
   resize: none;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
   background-color: #1e69e3;
   color: white;
   padding: 8px;
   border: none;
-  width: 200px;
+  width: 100px;
 }
 .center {
   text-align: center;
@@ -114,4 +116,14 @@ input[type="submit"] {
 .actual {
   background: rgb(20, 69, 124) !important;
   color: rgb(255, 255, 255) !important;
+}
+
+.pendiente {
+  padding: 10px;
+  border: solid 2px #eee;
+}
+
+.pendiente .texto {
+  display: inline-block;
+  width: 674px;
 }
